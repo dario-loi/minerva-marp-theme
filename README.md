@@ -2,7 +2,8 @@
 
 An **unofficial** Marp theme inspired by the visual identity of **Sapienza University of Rome**. 
 
-> Disclaimer: This is **not** an official Sapienza release. Use responsibly and follow institutional branding guidelines where required.
+> [!WARNING]
+> This is **not** an official Sapienza release. Use responsibly and follow institutional branding guidelines where required.
 
 ## Looks & Visual Comparison
 
