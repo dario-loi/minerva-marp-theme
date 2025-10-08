@@ -6,7 +6,6 @@
 :root {
     --sapienza-red: #822433;
     --sapienza-red-faded: #8224344b;
-    /* Low opacity version for accents */
     --main-text: #333333;
     --secondary-text: #5a5a5a;
     --bg-color: #fefefe;
