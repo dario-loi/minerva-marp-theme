@@ -1,0 +1,6 @@
+{
+    "markdown.marp.themes": [
+        "./minerva-theme.css"
+    ,   "./minerva-theme-clarity.css"
+    ]
+}

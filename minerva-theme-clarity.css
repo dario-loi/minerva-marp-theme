@@ -1,0 +1,200 @@
+/* @theme minerva-clarity */
+
+@import 'default';
+@import url('https://fonts.cdnfonts.com/css/open-dyslexic');
+
+:root {
+    --sapienza-red: #822433;
+    --sapienza-red-faded: #8224344b;
+    /* Low opacity version for accents */
+    --main-text: #333333;
+    --secondary-text: #5a5a5a;
+    --bg-color: #fefefe;
+    --code-bg: #f4f4f4;
+    --border-color: #e0e0e0;
+    font-size: 30px;
+}
+
+section {
+    background-color: var(--bg-color);
+
+    font-family: 'Open-Dyslexic', sans-serif;
+
+    position: relative;
+    color: var(--main-text);
+    padding: 60px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--sapienza-red);
+    font-weight: 600;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: 3px solid var(--sapienza-red);
+    padding-bottom: 0.2em;
+    margin-bottom: 0.8em;
+    display: inline-block;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+    color: var(--secondary-text);
+}
+
+a {
+    color: var(--sapienza-red);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--sapienza-red);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    border-bottom-style: solid;
+    background-color: var(--sapienza-red-faded);
+}
+
+header,
+footer {
+    color: var(--secondary-text);
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header {
+    top: 30px;
+    padding-bottom: 10px;
+}
+
+footer {
+    bottom: 30px;
+}
+
+
+section::after {
+    color: var(--secondary-text);
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    right: 60px;
+    bottom: 30px;
+}
+
+blockquote {
+    border-left: 6px solid var(--sapienza-red);
+    background: #fcfcfc;
+    padding: 1em 1.5em;
+    font-style: italic;
+    color: #555;
+    border-radius: 0 8px 8px 0;
+}
+
+code {
+    background-color: var(--code-bg);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+pre {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section.lead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+section.lead header,
+section.lead footer {
+    display: none;
+}
+
+section.lead h1 {
+    font-size: 3.8em;
+    border-bottom: none;
+    margin-bottom: 0.2em;
+    width: auto;
+    position: relative;
+    z-index: 2;
+    text-shadow: 5px 5px 0px rgba(255, 255, 255, 0.8);
+}
+
+section.lead h2 {
+    font-size: 1.8em;
+    font-weight: 300;
+    color: var(--secondary-text);
+    margin-bottom: 2em;
+    position: relative;
+    z-index: 2;
+}
+
+section.lead p {
+    font-size: 1.2em;
+    border-left: 4px solid var(--sapienza-red);
+    padding-left: 15px;
+    color: var(--main-text);
+    position: relative;
+    z-index: 2;
+}
+
+section.lead strong {
+    color: var(--sapienza-red);
+    display: block;
+    font-size: 1.1em;
+}
+
+section.lead::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 40%;
+    height: 30%;
+    background-color: var(--sapienza-red-faded);
+    transform: rotate(-15deg);
+    z-index: 0;
+}
+
+section.lead::after {
+    content: var(--p, '');
+    color: transparent; /* remove line numbering from title card */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    background: linear-gradient(to top left,
+            var(--sapienza-red) 0%,
+            var(--sapienza-red) 35%,
+            transparent 35.1%);
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    z-index: 1;
+}
