@@ -31,7 +31,7 @@ Below is a slide‑by‑slide visual comparison of the Standard vs Clarity theme
 --- 
 ## Quick Start (VS Code + Marp for VS Code)
 
-### 1. (Optional) If using VSCode
+### 1. Get the Marp Extension
 Install the [Marp for VSCode extension](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) for live preview and export capabilities.
 
 
