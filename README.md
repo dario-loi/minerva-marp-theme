@@ -28,7 +28,8 @@ Below is a slide‑by‑slide visual comparison of the Standard vs Clarity theme
 - Clarity variant with [OpenDyslexic](https://opendyslexic.org/) font for improved readability
 - 16:9 widescreen layout + pagination, header, footer
 
---- Quick Start (VS Code + Marp for VS Code)
+--- 
+## Quick Start (VS Code + Marp for VS Code)
 
 ### 1. (Optional) If using VSCode
 Install the [Marp for VSCode extension](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) for live preview and export capabilities.
