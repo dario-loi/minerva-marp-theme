@@ -46,8 +46,8 @@ If the CSS files are downloaded and in your folder (recommended for customizatio
 
 ```json
 "markdown.marp.themes": [
-    "https://raw.githubusercontent.com/darioloi/minerva-marp-theme/main/minerva-theme.css",
-    "https://raw.githubusercontent.com/darioloi/minerva-marp-theme/main/minerva-theme-clarity.css"
+    "https://raw.githubusercontent.com/dario-loi/minerva-marp-theme/refs/heads/master/minerva-theme.css",
+    "https://raw.githubusercontent.com/dario-loi/minerva-marp-theme/refs/heads/master/minerva-theme-clarity.css"
 ]
 ```
 
